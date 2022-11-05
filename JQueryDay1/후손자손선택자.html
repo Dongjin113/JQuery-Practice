@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+	$(document).ready(function(){
+              $(' div >  *').css('color','blue'); //자손선택자
+              $( 'body * ').css('color','blue');  //후손 선택자
+
+});
+</script></head>
+<body>
+내용확인 
+<div> 
+  후손영역
+  <ul>
+      <li> 자손영역1 </li>
+      <li> 자손영역2 </li>   
+  </ul>
+</div> 
+</body>
+</html>

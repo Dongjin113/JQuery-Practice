@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .reverse{
+            background-color: black;
+            color: white;
+        }
+    </style>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+
+$(()=>{
+    $('h1').click(function(){
+           $(this).html(function(index, html) {
+            return  html + '@';
+            });
+         });
+      setInterval(function(){
+         $('h1').last().trigger('click');
+      },1000);
+ });
+
+
+</script></head>
+
+<body>
+ <h1> 이벤트 </h1>
+ <h1> 이벤트 </h1>
+ <h1> 이벤트 </h1>
+ <h1> 이벤트 </h1>
+
+</body>
+</html>

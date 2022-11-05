@@ -1,0 +1,22 @@
+<html>
+<head>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+    $(function(){
+     var k = $('h1').html();
+
+        alert(k); 
+      //메서드 html()은 문서객체내부의 글자와 관련된 모든기능을 수행
+      //text는 번역된 글자만보임 Header-1  Header-2  Header-3 
+      //html은 <b><i>Header-1</i></b> 
+    })
+</script></head>
+<body>
+
+  <h1  > <b><i>Header-1</i></b> </h1> 
+  <h1  > Header-2 </h1> 
+  <h1  > Header-3 </h1>
+
+
+</body>
+</html>

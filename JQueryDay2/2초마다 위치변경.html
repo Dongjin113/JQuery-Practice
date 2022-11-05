@@ -1,0 +1,29 @@
+<html>
+<head>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+    $(function(){
+      /*
+     $('img').css('width',150); //이미지 크기를 지정
+
+     setInterval(function(){
+      $('img').first().appendTo('body'); 
+     },2000);
+      */
+
+      $('img').css('width',150); //이미지 크기를 지정
+
+     setInterval(function(){
+      $('img').last().prependTo('body'); //제일 뒤에있는것을 제일앞으로
+     },2000);
+     
+    })
+</script>
+</head>
+<body>
+  <img src="./img/둘리.png">
+  <img src="./img/리트리버.png">
+  <img src="./img/개.png">
+  <img src="./img/강아지.png">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .reverse{
+            background-color: black;
+            color: white;
+        }
+    </style>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+
+$(function(){
+    
+    $('h1').hover(
+        function(){ $(this).addClass('reverse');},
+        function(){$(this).removeClass('reverse');
+    })
+    /*
+	$('h1').on({
+        mouseenter:function(){$(this).addClass('reverse')},
+        mouseleave:function(){$(this).removeClass('reverse')}
+    });
+    */
+
+});
+
+</script></head>
+
+<body>
+ <h1> 이벤트 </h1>
+</body>
+</html>

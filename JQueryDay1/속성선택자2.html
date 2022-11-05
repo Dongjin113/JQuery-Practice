@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+      $(document).ready(function(){
+            setTimeout(function() {
+                  var str=$('#id').val();
+                 //var  value= $('select > option:selected').val() ; 
+                 //선택된값의 value를가져와 알람창에 찍어준다는뜻
+                      alert("5초후 실행"+str);
+             }, 5000 ); //5초뒤에 알람을띄워줌
+      } );
+</script></head>
+<body>
+      <div class="div1">
+            <form id="form1">
+                  <input  type="text" name="id" id="id" value="ppk"> <br />
+                  <input  type="text" name="pwd1"> <br />
+                  <input  type="text" name="age"> <br />
+ <select>
+   <option value="1번"> 1번선택  </option>      
+   <option value="2번"> 2번선택  </option>
+ </select>
+</form>
+</div>
+</body>
+</html>

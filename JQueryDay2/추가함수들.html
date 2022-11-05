@@ -1,0 +1,46 @@
+<html>
+<head>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+    $(function(){
+      /*
+     // div의 내용 뒤에추가
+      var h1 = '<h1> header1 </h1>';
+      var h2 = '<h1> header1 </h1>';
+      var h3 = '<h1> header1 </h1>';
+      $('div').append(h1,h2,h3);
+     // 결과값 : <div>내용추가 <h1> header1 </h1> <h1> header1 </h1> <h1> header1 </h1> </div>
+      */
+
+      /*
+      //div의 내용 앞에추가
+      var h1 = '<h1> header1 </h1>';
+      var h2 = '<h1> header1 </h1>';
+      var h3 = '<h1> header1 </h1>';
+      $('div').prepend(h1,h2,h3);
+      // 결과값 : <div> <h1> header1 </h1> <h1> header1 </h1> <h1> header1 </h1>내용추가 </div>
+      */
+
+      /*
+      //div의 밖에 뒤에 <h1>태그를 생성하여 추가
+      var h1 = '<h1> header1 </h1>';
+      var h2 = '<h1> header1 </h1>';
+      var h3 = '<h1> header1 </h1>';
+      $('div').after(h1,h2,h3);
+      // 결과값 : <div>내용추가<div> <h1>header<h1> <h1>header<h1> <h1>header<h1>
+      */
+        
+      //div의 밖에 뒤에 <h1>태그를 생성하여 추가
+        var h1 = '<h1> header1 </h1>';
+      var h2 = '<h1> header1 </h1>';
+      
+      var h3 = '<h1> header1 </h1>';
+      $('div').before(h1,h2,h3);
+      // 결과값 : <h1>header<h1> <h1>header<h1> <h1>header<h1> <div>내용추가<div> 
+      
+    })
+</script></head>
+<body>
+  <div>내용추가</div>
+</body>
+</html>

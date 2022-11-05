@@ -1,0 +1,25 @@
+<html>
+<head>
+  <style>
+    .first{color:red;}
+    .second{color:blue;}
+  </style>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+    $(function(){
+      var colorvlaue = ['red','blue','purple'];
+      $('h1').css('color',function(index){
+        return colorvalue[index];
+      })
+
+      });
+
+</script></head>
+<body>
+
+  <h1 class="first" > Header-0 </h1>
+  <h1 class="second" > Header-1 </h1>
+  <h1 class="second" > Header-2 </h1>
+
+</body>
+</html>

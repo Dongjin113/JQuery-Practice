@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+      $(document).ready(function(){
+        $('tr:gt(2)').css('background','#ff0000').css('color','#ffffff')
+        
+        $('td:nth-child(2n+1)').css('background','#990099').css('color','white');
+        $('tr:eq(0)').css('background','#ffff00');
+        $('tr:last').css('background','#0000ff');
+        //eg(n): n번쨰위치 gt(n): n번째초과 위치문서 객체 lt(n): n번째 미만 위치문서 객체 
+        //not(선택자) : 선택자와 일치 하지 않는 문서 객체 has(선택자) : 선택자가 있는 문서 객체를 선택
+
+           
+      } );
+</script>
+</head>
+<body>
+    <table  border=1 width="300">
+        
+        <tr> <td> 1 </td><td> 2 </td><td> 3 </td>   </tr>
+        <tr> <td> 4 </td><td> 5 </td><td> 6 </td>   </tr>
+        <tr> <td> 7 </td><td> 8 </td><td> 9 </td>   </tr>
+        <tr> <td> 10 </td><td> 11 </td><td> 12 </td>   </tr>
+
+        <thead>
+            <tr> <td> A </td><td> B </td><td> C </td>   </tr>
+        </thead>
+        <tfoot>
+            <tr> <td colspan="3" align="center" >이컴아</td>   </tr>
+        </tfoot>
+       </table>
+      
+</body>
+</html>

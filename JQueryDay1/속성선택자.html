@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+	$(document).ready(function(){
+        //값 대입하기 : .val() 안에 값이 있으면 값을 대입하는것이고, 값이 아무것도없으면 값을 받아오는것이다
+        $('input[type="text"]').val("hello jQuery"); //값이있으면 값을 대입
+        var k=$('input[type="text"]').val(); //안에 값이 아무것도 없으면 value의 값을 받아온다 
+          alert("확인"+k);
+          $('input[name="age"]').val("13") //hello jQuery가 입력이됐으니나 13을입력해서 13으로바뀜 위에서부터순차적으로 적용
+
+});
+</script></head>
+<body>
+ <input  type="text" name="id1" value="Good"> <br />
+ <input  type="text" name="pwd1"> <br />
+ <input  type="text" name="age"> <br />
+ <textarea  cols=20  rows=3>  </textarea> 
+</body>
+</html>

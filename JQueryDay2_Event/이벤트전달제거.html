@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * { margin: 5px; padding:5px; border:3px solid black;}
+    </style>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+$(()=>{
+    $('a').click(function(event1){
+        $('this').css('background-color','blue');
+        event1.stopPropagation();
+        event1.preventDefault();
+ });
+ $('h1').click(function(){
+    $(this).css('background-color','red');
+ })
+});
+</script></head>
+
+<body>
+    <h1> <a href="https://www.naver.com/" > Media </a>  </h1> 
+
+</body>
+</html>

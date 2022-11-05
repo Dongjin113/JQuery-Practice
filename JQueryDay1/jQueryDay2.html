@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="http://code.jquery.com/jquery-1.10.2.js" ></script>
+<script>
+
+
+$(function(){
+    alert('First read'); 
+    $('.div1').css('color','red');
+} );
+//.은 class #은 id
+$(function(){
+    alert('First read'); 
+    $('.div1.select').css('color','blue');
+} );
+
+</script>
+</head>
+<body>
+<div class="div1 select">
+첫번째 <h1>jQuery</h1> 입니다.
+</div>
+<div id="div2">
+첫번째 <h1>jQuery</h1> <b>입니다.</b>
+</div>
+</body>
+</html>
